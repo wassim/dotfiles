@@ -26,6 +26,15 @@ ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 # Install power-level-10k
 ! git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$HOME/.dotfiles/themes/powerlevel10k"
 
+# Install zsh auto suggestions
+! git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.dotfiles/plugins/zsh-autosuggestions"
+
+# Install zsh-syntax-highlighting
+! git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.dotfiles/plugins/zsh-syntax-highlighting"
+
+# Install zsh-z
+! git clone https://github.com/agkozak/zsh-z.git "$HOME/.dotfiles/plugins/zsh-z"
+
 # Update Homebrew recipes
 brew update
 
@@ -54,6 +63,9 @@ mkdir -p $HOME/dev
 # Create dev subdirectories
 mkdir -p $HOME/dev/sites
 mkdir -p $HOME/dev/clients
+
+# Update Valet's paths
+cd $HOME/dev/sites && valet park
 
 # Load nvm for the first time
 source $(brew --prefix nvm)/nvm.sh

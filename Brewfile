@@ -21,7 +21,6 @@ brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'stripe/stripe-cli/stripe'
-brew 'svn' # Needed to install fonts
 
 # Spatie Medialibrary
 brew 'jpegoptim'
@@ -30,7 +29,7 @@ brew 'pngquant'
 brew 'svgo'
 brew 'gifsicle'
 
-# Development
+# Dev
 brew 'php'
 brew 'composer'
 brew 'imagemagick'
@@ -76,3 +75,7 @@ cask 'visual-studio-code'
 cask 'vlc'
 #cask 'whatsapp'
 cask 'zoom'
+
+# Quicklook
+cask 'qlmarkdown'
+cask 'quicklook-json'
