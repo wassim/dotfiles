@@ -49,10 +49,10 @@ brew bundle --file $DOTFILES/Brewfile
 # pecl install imagick redis swoole
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose spatie/global-ray spatie/visit
+composer global require laravel/installer laravel/valet beyondcode/expose spatie/global-ray spatie/visit
 
 # Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
+valet install
 
 # Install Global Ray
 # $HOME/.composer/vendor/bin/global-ray install
@@ -98,7 +98,7 @@ npm i -g npm yarn eslint prettier cross-env --silent
 # $DOTFILES/clone.sh
 
 # Symlink the Mackup config file to the home directory
-# ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
+ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
 # source $DOTFILES/.macos
