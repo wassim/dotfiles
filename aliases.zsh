@@ -10,13 +10,13 @@ alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias dev="cd $HOME/dev/"
 alias sites="cd $HOME/dev/sites"
-alias sites="cd $HOME/dev/clients"
+alias clients="cd $HOME/dev/clients"
 
 # Docker
 alias docker-composer="docker-compose"
 
 # Git
-#alias gitit="git commit -pm 'update# `git log | grep commit | wc -l`'; git push"
+alias gitit="git commit -m 'update #`git log | grep commit | wc -l | xargs`'; git push"
 alias gst="git status"
 #alias gb="git branch"
 #alias gc="git checkout"
@@ -29,9 +29,9 @@ alias nuke="git clean -df && git reset --hard"
 alias pop="git stash pop"
 alias pull="git pull"
 alias push="git push"
-#alias resolve="git add . && git commit --no-edit"
-#alias stash="git stash -u"
-#alias unstage="git restore --staged ."
+alias resolve="git add . && git commit --no-edit"
+alias stash="git stash -u"
+alias unstage="git restore --staged ."
 alias wip="commit wip"
 alias undo="git reset --soft HEAD~1"
 
