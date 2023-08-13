@@ -16,7 +16,7 @@ alias clients="cd $HOME/dev/clients"
 alias docker-composer="docker-compose"
 
 # Git
-alias ship='git add . && curl -s https://wassim.co/emoji.txt | xargs git commit -m && git push'
+#alias ship='git add . && curl -s https://wassim.co/emoji.txt | xargs git commit -m && git push'
 alias gst="git status"
 alias gb="git branch"·
 alias gc="git checkout"

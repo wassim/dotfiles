@@ -92,7 +92,7 @@ npm i -g npm --silent
 npm i -g commitizen cz-conventional-changelog @commitlint/cli @commitlint/config-conventional --silent
 
 # Install other npm commonly used tools
-npm i -g npm yarn eslint prettier cross-env --silent
+npm i -g npm yarn eslint prettier cross-env nodemailer --silent
 
 # Clone Github repositories
 # $DOTFILES/clone.sh
